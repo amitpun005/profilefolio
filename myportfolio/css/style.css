@@ -14,15 +14,15 @@ body {
 
 /* main container starts here */
 .container {
-  /* border: solid; */
-  /* border-color: rgb(17, 17, 16); */
   height: auto;
   width: auto;
   padding: 20px;
   opacity: 0.95;
-  background-color: azure;
-  /* opacity: 90%; */
-  /* container named header is created and is given flex */
+  /* background-color: azure; */
+  background-color: #010303;
+}
+.text-white {
+  color: whitesmoke;
 }
 .header {
   display: flex;
