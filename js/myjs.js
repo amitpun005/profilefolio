@@ -1,6 +1,5 @@
 function callTopArrow(section) {
   if (section === "skills") {
-    alert("check" + section);
     document.getElementById("projects").style.position = "";
     document.getElementById("skills").style.position = "relative";
     document.getElementById("myBtn").style.position = "absolute";
@@ -9,7 +8,6 @@ function callTopArrow(section) {
     test.style.top = "35rem";
     test.style.right = "10px";
   } else if (section === "projects") {
-    alert("check" + section);
     document.getElementById("skills").style.position = "";
     document.getElementById("projects").style.position = "relative";
     document.getElementById("myBtn").style.position = "absolute";
@@ -17,7 +15,6 @@ function callTopArrow(section) {
     test2.style.top = "38rem";
     test2.style.right = "10px";
   } else if (section === "defaults") {
-    alert("check" + section);
     document.getElementById("skills").style.position = "";
     document.getElementById("projects").style.position = "";
     document.getElementById("myBtn").style.position = "";
@@ -25,7 +22,6 @@ function callTopArrow(section) {
     test3.style.top = "";
     test3.style.right = "10px";
   } else {
-    alert("check" + section);
     document.getElementById("projects").style.position = "";
     document.getElementById("skills").style.position = "";
     document.getElementById("default-pos").style.position = "";
