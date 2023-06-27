@@ -5,286 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="../myportfolio/css/style.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-html {
-  scroll-behavior: smooth;
-  /* makes the scroll movement smooth */
-}
-body {
-  /* font style used here */
-  /* font-family: "Open Sans", sans-serif; */
-  font-family: "Raleway", sans-serif;
-  margin: 0 auto;
-  box-sizing: border-box;
-  /* font-family: "Roboto Mono", monospace; */
-}
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
-/* main container starts here */
-.container {
-  height: auto;
-  width: auto;
-  padding: 20px;
-  opacity: 0.95;
-  /* background-color: azure; */
-  background-color: #010303;
-}
-.text-white {
-  color: whitesmoke;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-/* logo 1stdiv inside header container */
-.logo {
-  /* given the portion 0.3 0r 30% of the cointainer header */
-  flex: 0.3;
-}
-.logo h1 {
-  font-size: 50px;
-  color: blueviolet;
-}
-/* navigation-bar 2nd div inside header container */
-.navigation-bar {
-  /* border-color: rgb(234, 5, 5); */
-  /* dividing the container with flex and givin this cointainer 70% or 0.7 portion of the container */
-  flex: 0.7;
-}
-.navigation-bar ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  justify-content: flex-end;
-  align-items: center;
-}
-/* styling the text inside the bar */
-.navigation-bar nav ul li a {
-  text-decoration: none;
-  font-size: large;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: blueviolet;
-}
-.navigation-bar nav ul li a:hover {
-  color: #b579ed;
-}
-
-/* next container after header */
-.intro-container {
-  display: flex;
-
-  width: auto;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  padding: 20px 0 20px 0;
-}
-.photo {
-  flex: 0.2;
-}
-.photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.column-container {
-  flex: 0.8;
-  display: flex;
-  gap: 10px;
-  color: blueviolet;
-  /* font: italic 1.5em "Fira Sans", serif; */
-  line-height: 2rem;
-}
-
-.intro-container2 {
-  display: flex;
-  width: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 40px;
-  padding: 20px 0 20px 0;
-  /* flex-direction: row-reverse; */
-}
-.intro-container2 .skill-section{
-  flex: 0.3;
-}
-.intro-container2 .download-cv{
-  flex: 0.4;
-}
-.intro-container2 .photo{
-  flex: 0.3;
-}
-
-.download-cv{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.photo {
-  flex: 0.2;
-
-}
-.skills-icon {
-  flex: 0.2;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
- 
-
-.column-container2 {
-  flex: 0.8;
-  display: flex;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-  padding: 20px 0 20px 0;
-  
-}
-.downlaod-cv-btn {
-  border: none;
-  padding: 14px;
-  cursor: pointer;
-
-}
-
-.downlaod-cv-btn:hover {
-  background-color: #b579ed;
-
-}
-
-
-.downlaod-cv-btn a:hover{
-  color: #1f1e1e;
-}
-.downlaod-cv-btn a{
- text-decoration: none;
- color: white;
- font-size: 12px;
-
-}
-
-/* experience section cs starts here*/
-
-.intro-container3 {
-  display: flex;
-  width: auto;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  gap: 0px;
-}
-.photo {
-  flex: 0.2;
-}
-
-.column-container3 {
-  flex: 0.7;
-  display: flex;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-}
-
-.intro-container4 {
-  display: flex;
-  width: auto;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 30px;
-  padding: 20px 0 20px 0;
-}
-.photo {
-  flex: 0.2;
-}
-
-.column-container4 {
-  flex: 0.8;
-  display: flex;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-}
-
-.button {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-
-}
-.button a {
-  text-decoration: none;
-  color: white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.skills {
-  font-size: 38px;
-  font-weight: 600;
-}
-.projects {
-  font-size: 38px;
-  font-weight: 600;
-}
-.edu {
-  font-size: 38px;
-  font-weight: 600;
-}
-.exp {
-  font-size: 38px;
-  font-weight: 600;
-}
-.hobby {
-  font-size: 38px;
-  font-weight: 600;
-}
-.contact {
-  font-size: 38px;
-  font-weight: 600;
-}
-
-.intro-container2 button{
-  flex:0.3;
-  background-color: blueviolet;
-  border-radius: 8px;
-  font-size: 15px;
-
-}
-
-
-
-
-
-
-/* to position arrow top as per the postition */
-/* #skills {
-  border: 1px solid red;
-  position: relative;
-} */
-
-/* media query */
-@media screen and (max-width: 320px) {
-  .container,
-  .intro-container,
-  .column-container2,
-  .column-container3,
-  .column-container4,
-  .button {
-    width: 50%;
-  }
-
-}
-
-  </style>
 </head>
 
 <body>
@@ -368,10 +90,10 @@ body {
       </div>
       <div class="download-cv">
         <button class="downlaod-cv-btn">
-          <a href="../myportfolio/Doc/Resume.docx" download="Sample_Revision_Sheet.docx">
+          <a href="./Doc/Resume.docx" download="Sample_Revision_Sheet.docx">
             Download CV Here
           
-              <img src="../myportfolio/images/download.png" alt="cv" style="width: 15px; padding-left: 4px;  transform: translateY(30%);"/>
+              <img src="./images/download.png" alt="cv" style="width: 15px; padding-left: 4px;  transform: translateY(30%);"/>
                     
           </a>
          
@@ -379,7 +101,7 @@ body {
       </div>
      
       <div class="photo skills-icon">
-        <img src="../myportfolio/images/skills.png" alt="skills" style="width: 150px; height: 150px;" />
+        <img src="./images/skills.png" alt="skills" style="width: 150px; height: 150px;" />
       </div>
     </div>
 
@@ -388,7 +110,7 @@ body {
     <!-- projects section starts here -->
     <div class="intro-container3" id="projects">
       <div class="photo">
-        <img src="../myportfolio/images/projects.png" alt="projects" style="width: 150px; height: 150px;" />
+        <img src="./images/projects.png" alt="projects" style="width: 150px; height: 150px;" />
       </div>
       <!-- education section starts from here -->
       <div class="column-container2" style="padding-top: 4rem;">
@@ -460,7 +182,7 @@ body {
         </div>
       </div>
       <div class="photo skills-icon">
-        <img src="../myportfolio/images/edu.png" alt="education" style="width: 150px; height: 150px;" />
+        <img src="./images/edu.png" alt="education" style="width: 150px; height: 150px;" />
       </div>
     </div>
 
@@ -468,7 +190,7 @@ body {
 
     <div class="intro-container3" id="exp" style="margin-top: 4rem;">
       <div class="photo">
-        <img src="../myportfolio/images/exp.png" alt="experience" style="width: 150px; height: 150px;" />
+        <img src=".images/exp.png" alt="experience" style="width: 150px; height: 150px;" />
       </div>
 
       <div class="column-container3" style="margin-top: 1rem;">
@@ -507,7 +229,7 @@ body {
         </div>
       </div>
       <div class="photo skills-icon">
-        <img src="../myportfolio/images/hobb.png" alt="experience" style="width: 150px; height: 150px;" />
+        <img src="./images/hobb.png" alt="experience" style="width: 150px; height: 150px;" />
       </div>
     </div>
 
@@ -516,7 +238,7 @@ body {
     <!--  -->
     <div class="intro-container3" id="contact" style="margin-top: 2rem;">
       <div class="photo">
-        <img src="../myportfolio/images/contact.png" alt="contact" style="width: 150px; height: 150px;" />
+        <img src="./images/contact.png" alt="contact" style="width: 150px; height: 150px;" />
       </div>
 
       <div class="column-container2" style="margin-top: 2rem;">
