@@ -140,6 +140,7 @@ body {
 .downlaod-cv-btn {
   border: none;
   padding: 14px;
+
 }
 
 .downlaod-cv-btn:hover {
@@ -147,13 +148,13 @@ body {
 
 }
 
+
 .downlaod-cv-btn a:hover{
   color: #1f1e1e;
 }
 .downlaod-cv-btn a{
  text-decoration: none;
  color: white;
- padding: 10px;
  font-size: 12px;
 
 }
