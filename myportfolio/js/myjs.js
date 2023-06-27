@@ -64,3 +64,9 @@ function callTopArrow(section) {
     defaultPosition.style.right = "0px";
   }
 }
+
+function openMobileMenu(){
+  alert('hi menu')
+  let targetMenu = document.getElementsByClassName('.mobile-ham-list');
+  targetMenu.style.border = "1px solid white"
+}

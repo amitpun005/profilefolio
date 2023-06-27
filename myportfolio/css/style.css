@@ -29,10 +29,16 @@ body {
   flex-direction: row;
   align-items: center;
 }
+.mobile-ham-list{
+  display: none;
+}
 /* logo 1stdiv inside header container */
 .logo {
   /* given the portion 0.3 0r 30% of the cointainer header */
   flex: 0.3;
+}
+.mobile-nav{
+  display: none;
 }
 .logo h1 {
   font-size: 50px;
@@ -253,6 +259,23 @@ body {
   body {
     background-color: #010303;
   }
+  .navigation-bar{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+    color: white;
+    flex-direction: column;
+  }
+  .ham-menu{
+    width: 30px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
   .logo h1 {
     font-size: 25px;
     color: blueviolet;
@@ -339,5 +362,8 @@ body {
   gap: 30px;
   color: blueviolet;
   line-height: 2rem;
+}
+.mobile-ham-list{
+  color: white;
 }
 }
