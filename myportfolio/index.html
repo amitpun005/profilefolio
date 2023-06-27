@@ -1,266 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../myportfolio/css/style.css"
-    />
-  </head>
-  <body>
-    <!-- creating the main container -->
-    <div class="container">
-      <!-- this container (header) contains 2 more container iniside it namely log and navigation-bar. -->
-      <div class="header">
-        <div class="logo" is="#top">
-          <h1>Portfolio</h1>
-        </div>
-        <!-- navigation button starts here -->
-        <div class="navigation-bar" id="nav-bar">
-          <!-- gives the button  -->
-          <nav>
-            <ul>
-              <li><a href="#top">Home</a></li>
-              <li><a href="#skills" onclick="callTopArrow('skills')">Skills</a></li>
-              <li><a href="#projects"  onclick="callTopArrow('projects')">Projects</a></li>
-              <li><a href="#edu"  onclick="callTopArrow('edu')">Education</a></li>
 
-              <li><a href="#exp" onclick="callTopArrow('exp')">Experience</a></li>
-              <li><a href="#hobby" onclick="callTopArrow('hobby')">Hobby</a></li>
-              
-              
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../myportfolio/css/style.css" />
+</head>
 
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+<body>
+  <!-- creating the main container -->
+  <div class="container">
+    <!-- this container (header) contains 2 more container iniside it namely log and navigation-bar. -->
+    <div class="header">
+      <div class="logo" is="#top">
+        <h1>Portfolio</h1>
       </div>
-      <!-- the header container ends here -->
+      <!-- navigation button starts here -->
+      <div class="navigation-bar" id="nav-bar">
+        <!-- gives the button  -->
+        <nav>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#skills" onclick="callTopArrow('skills')">Skills</a></li>
+            <li><a href="#projects" onclick="callTopArrow('projects')">Projects</a></li>
+            <li><a href="#edu" onclick="callTopArrow('edu')">Education</a></li>
 
-      <!-- here container called intro-container starts -->
-      <div class="intro-container">
-        <div class="photo">
-          <img src="../myportfolio/images/profilephoto.jpg" alt="amit" width="180px"/>
+            <li><a href="#exp" onclick="callTopArrow('exp')">Experience</a></li>
+            <li><a href="#hobby" onclick="callTopArrow('hobby')">Hobby</a></li>
+
+
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- the header container ends here -->
+
+    <!-- here container called intro-container starts -->
+    <div class="intro-container">
+      <div class="photo">
+        <img src="../myportfolio/images/profilephoto.jpg" alt="amit" width="180px" />
+      </div>
+
+      <div class="column-container">
+        <div>
+          <div class="title"><b>Name</b></div>
+          <div class="Email_Id"><b>Email Id</b></div>
+          <div class="Phone_No"><b>Mobile</b></div>
+          <div class="Objective"><b>Objective</b></div>
         </div>
-
-        <div class="column-container">
-          <div>
-            <div class="title"><b>Name</b></div>
-            <div class="Email_Id"><b>Email Id</b></div>
-            <div class="Phone_No"><b>Mobile</b></div>
-            <div class="Objective"><b>Objective</b></div>
-          </div>
-          <div>
-            <div class="title"><b>:</b></div>
-            <div class="Email_Id"><b>:</b></div>
-            <div class="Phone_No"><b>:</b></div>
-            <div class="Objective"><b>:</b></div>
-          </div>
-          <div class="text-white">
-            <div class="title">Amit Pun.</div>
-            <div class="Email_Id">amitpun005@gmail.com.</div>
-            <div class="Phone_No">7005146338.</div>
-            <div class="Objective">
-              An opportunity to join a progressive organization where I can use
-              my skills to make a significant contribution to the success of the
-              company.
-            </div>
+        <div>
+          <div class="title"><b>:</b></div>
+          <div class="Email_Id"><b>:</b></div>
+          <div class="Phone_No"><b>:</b></div>
+          <div class="Objective"><b>:</b></div>
+        </div>
+        <div class="text-white">
+          <div class="title">Amit Pun.</div>
+          <div class="Email_Id">amitpun005@gmail.com.</div>
+          <div class="Phone_No">7005146338.</div>
+          <div class="Objective">
+            An opportunity to join a progressive organization where I can use
+            my skills to make a significant contribution to the success of the
+            company.
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- skills section Starts Here -->
-      <div class="intro-container2" id="skills" >
-        <div class="photo">
-          <img src="../myportfolio/images/skills.png" alt="skills" style="width: 150px; height: 150px;"/>
+    <!-- skills section Starts Here -->
+    <div class="intro-container2" id="skills">
+      <!-- education section starts from here -->
+      <div class="column-container2 skill-section">
+        <div class="">
+          <div class="skills">Skills:</div>
         </div>
-        <!-- education section starts from here -->
-        <div class="column-container2" >
-          <div>
-            <div class="skills">Skills:</div>
-          </div>
 
-       
-          <div class="text-white">
-            <div class="discription">Html, Css, Js, Core-Java.</div>
-            <div class="discription">Android SDK, MySql, Jira.</div>
 
-            <!-- <div class="discription">Android SDK,Jira.</div>
-            
-            <div class="discription">
-              B.E(C.S.E) Meenakshi University -Chennai.
-            </div> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- skills section ends here -->
-
-      <!-- projects section starts here -->
-      <div class="intro-container3"  id="projects">
-        <div class="photo">
-          <img src="../myportfolio/images/projects.png" alt="projects" style="width: 150px; height: 150px;"/>
-        </div>
-        <!-- education section starts from here -->
-        <div class="column-container2"  style="padding-top: 4rem;">
-          <div>
-            <div class="projects">Projects:</div>
-          </div>
+        <div class="text-white">
+          <div class="discription">Html, Css, Js, Core-Java.</div>
+          <div class="discription">Android SDK, MySql, Jira.</div>
 
          
-          <div class="text-white">
-            <div class="description" style="margin-top: -15px;">
-              <p class="highlight-text">
-              <h2>MMC</h2> Handled all the sales & stocks of mobile store. Used to
-              push notification to customer for any kind of information like new
-              arrival dicsounts and EMI remainder. build using ,Android Studio
-              with Java8 and rest API,python Jango and Mysql db.Hosted in NGINE
-              server, in cloud platform domain form GO-DADDY.
-            </p>
-            </div>
-            <div class="description" >
-              <p>
-              <h2> MSPDCL</h2> It is implemented as a product which will be used by
-              Manipur state power department. Once Customer takes the
-              connection, we can add all information about customer including
-              personal, address details etc. Customer premium details will be
-              stored in the database in the web services used and then will be
-              tracked. When customer pays the bill the details can be added to
-              the database through the app.</p>
-            </div>
-            <div class="description">
-              <p>
-              <h2>HUNGYO PHOTOGRAPHY</h2> This studio does marriage and other event
-              management. Pitch an Idea to build a brand as a website for his
-              bussiness.It was buid on HTML,CSS,JS and firebase as db.it help
-              boosting the business by reaching it to the masses through the url
-              provided.
-            </p>
-            </div>
-
-            <div class="description">
-              <p>
-              <h2>EDU-BRIDGE</h2> Android app build as an in house project for any
-              school which manages 500 students. The parent of the Students use
-              to get information through msg regarding the attendence of the
-              ward. Study material online for absentees and various Updates
-              regarding school holidays, tests, upcoming exams, events etc were
-              done through msg.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- project section ends here -->
-
-      <!-- education section starts here -->
-      <div class="intro-container2" id="edu">
-        <div class="photo">
-          <img src="../myportfolio/images/edu.png" alt="education" style="width: 150px; height: 150px;"/>
-        </div>
-
-        <div class="column-container2" >
-          <div>
-            <div class="edu" >Education:</div>
-          </div>
-
        
-          <div class="text-white">
-            <div class="discription">HSLC from BOSEM -Manipur.</div>
-            <div class="discription">HSSLC from CBSE -Manipur.</div>
+      </div>
+      <div class="download-cv">
+        <button class="downlaod-cv-btn">
+          <a href="../myportfolio/Doc/Resume.docx" download="Sample_Revision_Sheet.docx">
+            Download CV Here
+          </a>
+        </button>
+      </div>
+     
+      <div class="photo skills-icon">
+        <img src="../myportfolio/images/skills.png" alt="skills" style="width: 150px; height: 150px;" />
+      </div>
+    </div>
 
-            <div class="discription">
-              B.E(C.S.E) Meenakshi University -Chennai.
-            </div>
+    <!-- skills section ends here -->
+
+    <!-- projects section starts here -->
+    <div class="intro-container3" id="projects">
+      <div class="photo">
+        <img src="../myportfolio/images/projects.png" alt="projects" style="width: 150px; height: 150px;" />
+      </div>
+      <!-- education section starts from here -->
+      <div class="column-container2" style="padding-top: 4rem;">
+        <div>
+          <div class="projects">Projects:</div>
+        </div>
+
+
+        <div class="text-white">
+          <div class="description" style="margin-top: -15px;">
+            <p class="highlight-text">
+            <h2>MMC</h2> Handled all the sales & stocks of mobile store. Used to
+            push notification to customer for any kind of information like new
+            arrival dicsounts and EMI remainder. build using ,Android Studio
+            with Java8 and rest API,python Jango and Mysql db.Hosted in NGINE
+            server, in cloud platform domain form GO-DADDY.
+            </p>
+          </div>
+          <div class="description">
+            <p>
+            <h2> MSPDCL</h2> It is implemented as a product which will be used by
+            Manipur state power department. Once Customer takes the
+            connection, we can add all information about customer including
+            personal, address details etc. Customer premium details will be
+            stored in the database in the web services used and then will be
+            tracked. When customer pays the bill the details can be added to
+            the database through the app.</p>
+          </div>
+          <div class="description">
+            <p>
+            <h2>HUNGYO PHOTOGRAPHY</h2> This studio does marriage and other event
+            management. Pitch an Idea to build a brand as a website for his
+            bussiness.It was buid on HTML,CSS,JS and firebase as db.it help
+            boosting the business by reaching it to the masses through the url
+            provided.
+            </p>
+          </div>
+
+          <div class="description">
+            <p>
+            <h2>EDU-BRIDGE</h2> Android app build as an in house project for any
+            school which manages 500 students. The parent of the Students use
+            to get information through msg regarding the attendence of the
+            ward. Study material online for absentees and various Updates
+            regarding school holidays, tests, upcoming exams, events etc were
+            done through msg.
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- education section ends here -->
+    <!-- project section ends here -->
 
-      <div class="intro-container3" id="exp" style="margin-top: 4rem;">
-        <div class="photo">
-          <img src="../myportfolio/images/exp.png" alt="experience" style="width: 150px; height: 150px;"/>
+    <!-- education section starts here -->
+    <div class="intro-container2" id="edu">      
+
+      <div class="column-container2">
+        <div>
+          <div class="edu">Education:</div>
         </div>
+        <div class="text-white">
+          <div class="discription">HSLC from BOSEM -Manipur.</div>
+          <div class="discription">HSSLC from CBSE -Manipur.</div>
 
-        <div class="column-container3" style="margin-top: 1rem;">
-          <div>
-            <div class="exp" >Experience:</div>
-          </div>
-        
-          <div class="text-white">
-            <div class="discription">
-              Worked as Website developer/Social Media Handler - Beyond Designs
-              Ltd (10/06/2019-11/07/2022).
-            </div>
-            <div class="discription">
-              Worked as Project Manager/Website Developer -NextFifth Ltd
-              (1/02/2018-1/05/2019).
-            </div>
-            <div class="Phone_No">
-              Worked as App Developer -CubeTen Technologies Pvt Ltd
-              (1/12/15-12/11/2017).
-            </div>
+          <div class="discription">
+            B.E(C.S.E) Meenakshi University -Chennai.
           </div>
         </div>
       </div>
+      <div class="photo skills-icon">
+        <img src="../myportfolio/images/edu.png" alt="education" style="width: 150px; height: 150px;" />
+      </div>
+    </div>
 
-      <div class="intro-container2" id="hobby" style="margin-top: 2rem;">
-        <div class="photo">
-          <img src="../myportfolio/images/hobb.png" alt="experience" style="width: 150px; height: 150px;"/>
+    <!-- education section ends here -->
+
+    <div class="intro-container3" id="exp" style="margin-top: 4rem;">
+      <div class="photo">
+        <img src="../myportfolio/images/exp.png" alt="experience" style="width: 150px; height: 150px;" />
+      </div>
+
+      <div class="column-container3" style="margin-top: 1rem;">
+        <div>
+          <div class="exp">Experience:</div>
         </div>
 
-        <div class="column-container4" >
-          <div>
-            <div class="hobby" >Hobby:</div>
+        <div class="text-white">
+          <div class="discription">
+            Worked as Website developer/Social Media Handler - Beyond Designs
+            Ltd (10/06/2019-11/07/2022).
           </div>
-         
-          <div class="text-white">
-            <div class="discription">Fishing , Playing Football , Work Out</div>
-            <div class="discription">Hiking , Campings , Running.</div>
+          <div class="discription">
+            Worked as Project Manager/Website Developer -NextFifth Ltd
+            (1/02/2018-1/05/2019).
+          </div>
+          <div class="Phone_No">
+            Worked as App Developer -CubeTen Technologies Pvt Ltd
+            (1/12/15-12/11/2017).
           </div>
         </div>
       </div>
-    
+    </div>
+
+    <div class="intro-container2" id="hobby" style="margin-top: 2rem;">
+      
+
+      <div class="column-container4">
+        <div>
+          <div class="hobby">Hobby:</div>
+        </div>
+
+        <div class="text-white">
+          <div class="discription">Fishing , Playing Football , Work Out</div>
+          <div class="discription">Hiking , Campings , Running.</div>
+        </div>
+      </div>
+      <div class="photo skills-icon">
+        <img src="../myportfolio/images/hobb.png" alt="experience" style="width: 150px; height: 150px;" />
+      </div>
+    </div>
 
 
-      <!--  -->
+
+    <!--  -->
     <div class="intro-container3" id="contact" style="margin-top: 2rem;">
       <div class="photo">
-        <img src="../myportfolio/images/contact.png" alt="contact" style="width: 150px; height: 150px;"/>
+        <img src="../myportfolio/images/contact.png" alt="contact" style="width: 150px; height: 150px;" />
       </div>
 
-      <div class="column-container2"  style="margin-top: 2rem;">
+      <div class="column-container2" style="margin-top: 2rem;">
         <div>
-          <div class="contact" >Contact:</div>
+          <div class="contact">Contact:</div>
         </div>
 
-      
+
         <div class="text-white">
           <div class="discription">Amit Pun.</div>
           <div class="discription">amitpun005@gmail.com.</div>
 
           <div class="discription">
-           16 Main, 9th Cross, BTM 2nd Stage Banglore, Karnataka - India.
+            16 Main, 9th Cross, BTM 2nd Stage Banglore, Karnataka - India.
           </div>
-          <div class="discription">.</div>
-         
+        
+
         </div>
-      </div>    
-      
+      </div>
+
     </div>
     <div id="default-pos">
-      <div class="button" id="myBtn"><a href="#top" >
-        <img src="./images/up-arrow.png" alt="scroll-top" width="70px" onclick="callTopArrow('default')">
-      </a>
+      <div class="button" id="myBtn"><a href="#top">
+          <img src="./images/up-arrow.png" alt="scroll-top" width="70px" onclick="callTopArrow('default')">
+        </a>
+      </div>
     </div>
-    </div>
-   
-  
+
+
     <script src="./js/myjs.js"></script>
-  </body>
+</body>
+
 </html>

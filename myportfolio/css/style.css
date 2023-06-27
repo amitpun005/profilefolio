@@ -92,38 +92,75 @@ body {
 }
 
 .intro-container2 {
-  /* border: solid;column-container
-  border-color: rgb(9, 9, 9); */
-
   display: flex;
   width: auto;
   flex-direction: row;
   align-items: center;
+  justify-content: start;
   gap: 40px;
-
   padding: 20px 0 20px 0;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
+}
+.intro-container2 .skill-section{
+  flex: 0.3;
+}
+.intro-container2 .download-cv{
+  flex: 0.4;
+}
+.intro-container2 .photo{
+  flex: 0.3;
+}
+
+.download-cv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .photo {
   flex: 0.2;
+
 }
+.skills-icon {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+ 
 
 .column-container2 {
   flex: 0.8;
   display: flex;
   gap: 30px;
   color: blueviolet;
-  /* font: italic 1.5em "Fira Sans", serif; */
   line-height: 2rem;
   padding: 20px 0 20px 0;
+  
+}
+.downlaod-cv-btn {
+  border: none;
+  padding: 14px;
+}
+
+.downlaod-cv-btn:hover {
+  background-color: #b579ed;
+
+}
+
+.downlaod-cv-btn a:hover{
+  color: #1f1e1e;
+}
+.downlaod-cv-btn a{
+ text-decoration: none;
+ color: white;
+ padding: 10px;
+ font-size: 12px;
+
 }
 
 /* experience section cs starts here*/
 
 .intro-container3 {
-  /* border: solid;column-container
-  border-color: rgb(9, 9, 9); */
-
   display: flex;
   width: auto;
   flex-direction: row;
@@ -140,7 +177,6 @@ body {
   display: flex;
   gap: 30px;
   color: blueviolet;
-
   line-height: 2rem;
 }
 
@@ -155,17 +191,12 @@ body {
 .photo {
   flex: 0.2;
 }
-/* .photo img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-} */
+
 .column-container4 {
   flex: 0.8;
   display: flex;
   gap: 30px;
   color: blueviolet;
-  /* font: italic 1.5em "Fira Sans", serif; */
   line-height: 2rem;
 }
 
@@ -173,6 +204,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: end;
+
 }
 .button a {
   text-decoration: none;
@@ -209,6 +241,19 @@ body {
   font-weight: 600;
 }
 
+.intro-container2 button{
+  flex:0.3;
+  background-color: blueviolet;
+  border-radius: 8px;
+  font-size: 15px;
+
+}
+
+
+
+
+
+
 /* to position arrow top as per the postition */
 /* #skills {
   border: 1px solid red;
@@ -225,4 +270,5 @@ body {
   .button {
     width: 50%;
   }
+
 }
