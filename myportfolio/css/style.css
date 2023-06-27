@@ -101,24 +101,23 @@ body {
   padding: 20px 0 20px 0;
   /* flex-direction: row-reverse; */
 }
-.intro-container2 .skill-section{
+.intro-container2 .skill-section {
   flex: 0.3;
 }
-.intro-container2 .download-cv{
+.intro-container2 .download-cv {
   flex: 0.4;
 }
-.intro-container2 .photo{
+.intro-container2 .photo {
   flex: 0.3;
 }
 
-.download-cv{
+.download-cv {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .photo {
   flex: 0.2;
-
 }
 .skills-icon {
   flex: 0.2;
@@ -126,7 +125,6 @@ body {
   align-items: center;
   justify-content: end;
 }
- 
 
 .column-container2 {
   flex: 0.8;
@@ -135,29 +133,24 @@ body {
   color: blueviolet;
   line-height: 2rem;
   padding: 20px 0 20px 0;
-  
 }
 .downlaod-cv-btn {
   border: none;
   padding: 14px;
   cursor: pointer;
-
 }
 
 .downlaod-cv-btn:hover {
   background-color: #b579ed;
-
 }
 
-
-.downlaod-cv-btn a:hover{
+.downlaod-cv-btn a:hover {
   color: #1f1e1e;
 }
-.downlaod-cv-btn a{
- text-decoration: none;
- color: white;
- font-size: 12px;
-
+.downlaod-cv-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
 }
 
 /* experience section cs starts here*/
@@ -206,7 +199,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: end;
-
 }
 .button a {
   text-decoration: none;
@@ -243,18 +235,12 @@ body {
   font-weight: 600;
 }
 
-.intro-container2 button{
-  flex:0.3;
+.intro-container2 button {
+  flex: 0.3;
   background-color: blueviolet;
   border-radius: 8px;
   font-size: 15px;
-
 }
-
-
-
-
-
 
 /* to position arrow top as per the postition */
 /* #skills {
@@ -263,14 +249,95 @@ body {
 } */
 
 /* media query */
-@media screen and (max-width: 320px) {
-  .container,
-  .intro-container,
-  .column-container2,
-  .column-container3,
-  .column-container4,
-  .button {
-    width: 50%;
+@media screen and (min-width: 320px) {
+  body {
+    background-color: #010303;
+  }
+  .logo h1 {
+    font-size: 25px;
+    color: blueviolet;
+  }
+  .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .intro-container {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+  }
+  .intro-container2 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+    /* flex-direction: row-reverse; */
+  }
+  .intro-container2 .download-cv {
+    flex: 1;
+  }
+  .intro-container3 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .column-container2 {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+    padding: 20px 0 20px 0;
+    padding: 8px;
+  }
+  .skills {
+    font-size: 25px;
+  }
+  .projects {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .description {
+    font-size: 12px;
   }
 
+  .edu {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .text-white {
+    color: whitesmoke;
+    font-size: 12px;
+  }
+  .column-container3 {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: blueviolet;
+  }
+  .exp {
+    font-size: 25px;
+    font-weight: 600;
+}
+.column-container4 {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: blueviolet;
+  line-height: 2rem;
+}
 }
