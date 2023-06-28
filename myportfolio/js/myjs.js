@@ -66,7 +66,11 @@ function callTopArrow(section) {
 }
 
 function openMobileMenu(){
-  alert('hi menu')
-  let targetMenu = document.getElementsByClassName('.mobile-ham-list');
-  targetMenu.style.border = "1px solid white"
+  let targetMenu = document.getElementById('mobile-ham-list-id');
+  targetMenu.style.display = "flex"
+}
+
+function closehambrger(){
+  let targetMenu = document.getElementById('mobile-ham-list-id');
+  targetMenu.style.display = "none"
 }

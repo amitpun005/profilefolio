@@ -3,250 +3,7 @@ html {
   scroll-behavior: smooth;
   /* makes the scroll movement smooth */
 }
-body {
-  /* font style used here */
-  /* font-family: "Open Sans", sans-serif; */
-  font-family: "Raleway", sans-serif;
-  margin: 0 auto;
-  box-sizing: border-box;
-  /* font-family: "Roboto Mono", monospace; */
-}
 
-/* main container starts here */
-.container {
-  height: auto;
-  width: auto;
-  padding: 20px;
-  opacity: 0.95;
-  /* background-color: azure; */
-  background-color: #010303;
-}
-.text-white {
-  color: whitesmoke;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.mobile-ham-list{
-  display: none;
-}
-/* logo 1stdiv inside header container */
-.logo {
-  /* given the portion 0.3 0r 30% of the cointainer header */
-  flex: 0.3;
-}
-.mobile-nav{
-  display: none;
-}
-.logo h1 {
-  font-size: 50px;
-  color: blueviolet;
-}
-/* navigation-bar 2nd div inside header container */
-.navigation-bar {
-  /* border-color: rgb(234, 5, 5); */
-  /* dividing the container with flex and givin this cointainer 70% or 0.7 portion of the container */
-  flex: 0.7;
-}
-.navigation-bar ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  justify-content: flex-end;
-  align-items: center;
-}
-/* styling the text inside the bar */
-.navigation-bar nav ul li a {
-  text-decoration: none;
-  font-size: large;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: blueviolet;
-}
-.navigation-bar nav ul li a:hover {
-  color: #b579ed;
-}
-
-/* next container after header */
-.intro-container {
-  display: flex;
-
-  width: auto;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  padding: 20px 0 20px 0;
-}
-.photo {
-  flex: 0.2;
-}
-.photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.column-container {
-  flex: 0.8;
-  display: flex;
-  gap: 10px;
-  color: blueviolet;
-  /* font: italic 1.5em "Fira Sans", serif; */
-  line-height: 2rem;
-}
-
-.intro-container2 {
-  display: flex;
-  width: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 40px;
-  padding: 20px 0 20px 0;
-  /* flex-direction: row-reverse; */
-}
-.intro-container2 .skill-section {
-  flex: 0.3;
-}
-.intro-container2 .download-cv {
-  flex: 0.4;
-}
-.intro-container2 .photo {
-  flex: 0.3;
-}
-
-.download-cv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.photo {
-  flex: 0.2;
-}
-.skills-icon {
-  flex: 0.2;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.column-container2 {
-  flex: 0.8;
-  display: flex;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-  padding: 20px 0 20px 0;
-}
-.downlaod-cv-btn {
-  border: none;
-  padding: 14px;
-  cursor: pointer;
-}
-
-.downlaod-cv-btn:hover {
-  background-color: #b579ed;
-}
-
-.downlaod-cv-btn a:hover {
-  color: #1f1e1e;
-}
-.downlaod-cv-btn a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-}
-
-/* experience section cs starts here*/
-
-.intro-container3 {
-  display: flex;
-  width: auto;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  gap: 0px;
-}
-.photo {
-  flex: 0.2;
-}
-
-.column-container3 {
-  flex: 0.7;
-  display: flex;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-}
-
-.intro-container4 {
-  display: flex;
-  width: auto;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 30px;
-  padding: 20px 0 20px 0;
-}
-.photo {
-  flex: 0.2;
-}
-
-.column-container4 {
-  flex: 0.8;
-  display: flex;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-}
-
-.button {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-.button a {
-  text-decoration: none;
-  color: white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.skills {
-  font-size: 38px;
-  font-weight: 600;
-}
-.projects {
-  font-size: 38px;
-  font-weight: 600;
-}
-.edu {
-  font-size: 38px;
-  font-weight: 600;
-}
-.exp {
-  font-size: 38px;
-  font-weight: 600;
-}
-.hobby {
-  font-size: 38px;
-  font-weight: 600;
-}
-.contact {
-  font-size: 38px;
-  font-weight: 600;
-}
-
-.intro-container2 button {
-  flex: 0.3;
-  background-color: blueviolet;
-  border-radius: 8px;
-  font-size: 15px;
-}
 
 /* to position arrow top as per the postition */
 /* #skills {
@@ -255,30 +12,225 @@ body {
 } */
 
 /* media query */
-@media screen and (min-width: 320px) {
-  body {
-    background-color: #010303;
+
+@media (min-width:320px)  {
+ 
+    body {
+      background-color: #010303;
+    }
+    .navigation-bar{
+      display: none;
+    }
+    .mobile-nav{
+      display: flex;
+      color: white;
+      flex-direction: column;
+    }
+    .ham-menu{
+      width: 30px;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
   }
-  .navigation-bar{
-    display: none;
+    .logo h1 {
+      font-size: 25px;
+      color: blueviolet;
+    }
+    .photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .intro-container {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 20px 0 20px 0;
+    }
+    .intro-container2 {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 40px;
+      padding: 20px 0 20px 0;
+      /* flex-direction: row-reverse; */
+    }
+    .intro-container2 .download-cv {
+      flex: 1;
+    }
+    .intro-container3 {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+    }
+    .column-container2 {
+      flex: 0.8;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: blueviolet;
+      line-height: 2rem;
+      padding: 20px 0 20px 0;
+      padding: 8px;
+    }
+    .skills {
+      font-size: 25px;
+    }
+    .projects {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .description {
+      font-size: 12px;
+    }
+  
+    .edu {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .text-white {
+      color: whitesmoke;
+      font-size: 12px;
+    }
+    .column-container3 {
+      flex: 0.7;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: blueviolet;
+    }
+    .exp {
+      font-size: 25px;
+      font-weight: 600;
   }
-  .mobile-nav{
+  .column-container4 {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+  }
+  .mobile-ham-list{
+    margin-top: 24px;
+    margin-right: 5px;
+    background-color: #b579ed;
     display: flex;
     color: white;
-    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 0;
+
+    right: 0;
   }
-  .ham-menu{
-    width: 30px;
+  .mobile-ham-list a{
+    text-decoration: none;
+    color: white;
+  }
+  .mobile-ham-list ul{
+    list-style: none;
+    padding: 8px;
+    background-color: #b579ed;
+    
+  }
+  
+ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+  body {
+    /* font style used here */
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Raleway", sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* font-family: "Roboto Mono", monospace; */
+  }
+  
+  /* main container starts here */
+  .container {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    opacity: 0.95;
+    /* background-color: azure; */
+    background-color: #010303;
+  }
+  .text-white {
+    color: whitesmoke;
   }
   .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
+  }
+  .mobile-ham-list{
+    display: none;
+  }
+  /* logo 1stdiv inside header container */
+  .logo {
+    /* given the portion 0.3 0r 30% of the cointainer header */
+    flex: 0.3;
+  }
+  .mobile-nav{
+    display: none;
+    position: relative;
+  }
   .logo h1 {
-    font-size: 25px;
+    font-size: 50px;
     color: blueviolet;
+  }
+  /* navigation-bar 2nd div inside header container */
+  .navigation-bar {
+    /* border-color: rgb(234, 5, 5); */
+    /* dividing the container with flex and givin this cointainer 70% or 0.7 portion of the container */
+    display: flex;
+
+    flex: 0.7;
+  }
+  .navigation-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* styling the text inside the bar */
+  .navigation-bar nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: blueviolet;
+  }
+  .navigation-bar nav ul li a:hover {
+    color: #b579ed;
+  }
+  
+  /* next container after header */
+  .intro-container {
+    display: flex;
+  
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+  }
+  .photo {
+    flex: 0.2;
   }
   .photo img {
     width: 200px;
@@ -286,84 +238,410 @@ body {
     border-radius: 50%;
     object-fit: cover;
   }
-  .intro-container {
+  .column-container {
+    flex: 0.8;
     display: flex;
-    width: auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 20px 0 20px 0;
+    gap: 10px;
+    color: blueviolet;
+    /* font: italic 1.5em "Fira Sans", serif; */
+    line-height: 2rem;
   }
+  
   .intro-container2 {
     display: flex;
     width: auto;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: start;
     gap: 40px;
     padding: 20px 0 20px 0;
     /* flex-direction: row-reverse; */
   }
+  .intro-container2 .skill-section {
+    flex: 0.3;
+  }
   .intro-container2 .download-cv {
-    flex: 1;
+    flex: 0.4;
   }
-  .intro-container3 {
+  .intro-container2 .photo {
+    flex: 0.3;
+  }
+  
+  .download-cv {
     display: flex;
-    width: auto;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 0px;
+    justify-content: center;
   }
+  .photo {
+    flex: 0.2;
+  }
+  .skills-icon {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
   .column-container2 {
     flex: 0.8;
     display: flex;
-    flex-direction: column;
     gap: 30px;
     color: blueviolet;
     line-height: 2rem;
     padding: 20px 0 20px 0;
-    padding: 8px;
   }
-  .skills {
-    font-size: 25px;
+  .downlaod-cv-btn {
+    border: none;
+    padding: 14px;
+    cursor: pointer;
   }
-  .projects {
-    font-size: 25px;
-    font-weight: 600;
+  
+  .downlaod-cv-btn:hover {
+    background-color: #b579ed;
   }
-  .description {
+  
+  .downlaod-cv-btn a:hover {
+    color: #1f1e1e;
+  }
+  .downlaod-cv-btn a {
+    text-decoration: none;
+    color: white;
     font-size: 12px;
   }
-
-  .edu {
-    font-size: 25px;
-    font-weight: 600;
+  
+  /* experience section cs starts here*/
+  
+  .intro-container3 {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 0px;
   }
-  .text-white {
-    color: whitesmoke;
-    font-size: 12px;
+  .photo {
+    flex: 0.2;
   }
+  
   .column-container3 {
     flex: 0.7;
     display: flex;
-    flex-direction: column;
     gap: 30px;
     color: blueviolet;
+    line-height: 2rem;
+  }
+  
+  .intro-container4 {
+    display: flex;
+    width: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0 20px 0;
+  }
+  .photo {
+    flex: 0.2;
+  }
+  
+  .column-container4 {
+    flex: 0.8;
+    display: flex;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+  }
+  
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .button a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .skills {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .projects {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .edu {
+    font-size: 38px;
+    font-weight: 600;
   }
   .exp {
-    font-size: 25px;
+    font-size: 38px;
     font-weight: 600;
-}
-.column-container4 {
-  flex: 0.8;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  color: blueviolet;
-  line-height: 2rem;
-}
-.mobile-ham-list{
-  color: white;
-}
+  }
+  .hobby {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .contact {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  
+  .intro-container2 button {
+    flex: 0.3;
+    background-color: blueviolet;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+ }
+@media (min-width:1281px) {
+  body {
+    /* font style used here */
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Raleway", sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* font-family: "Roboto Mono", monospace; */
+  }
+  
+  /* main container starts here */
+  .container {
+    height: auto;
+    width: auto;
+    padding: 20px;
+    opacity: 0.95;
+    /* background-color: azure; */
+    background-color: #010303;
+  }
+  .text-white {
+    color: whitesmoke;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mobile-ham-list{
+    display: none;
+  }
+  /* logo 1stdiv inside header container */
+  .logo {
+    /* given the portion 0.3 0r 30% of the cointainer header */
+    flex: 0.3;
+  }
+  .mobile-nav{
+    display: none;
+  }
+  .logo h1 {
+    font-size: 50px;
+    color: blueviolet;
+  }
+  /* navigation-bar 2nd div inside header container */
+  .navigation-bar {
+    /* border-color: rgb(234, 5, 5); */
+    /* dividing the container with flex and givin this cointainer 70% or 0.7 portion of the container */
+    flex: 0.7;
+    justify-content: flex-end;
+  }
+  .navigation-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* styling the text inside the bar */
+  .navigation-bar nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: blueviolet;
+  }
+  .navigation-bar nav ul li a:hover {
+    color: #b579ed;
+  }
+  
+  /* next container after header */
+  .intro-container {
+    display: flex;
+  
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+  }
+  .photo {
+    flex: 0.2;
+  }
+  .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .column-container {
+    flex: 0.8;
+    display: flex;
+    gap: 10px;
+    color: blueviolet;
+    /* font: italic 1.5em "Fira Sans", serif; */
+    line-height: 2rem;
+  }
+  
+  .intro-container2 {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+    /* flex-direction: row-reverse; */
+  }
+  .intro-container2 .skill-section {
+    flex: 0.3;
+  }
+  .intro-container2 .download-cv {
+    flex: 0.4;
+  }
+  .intro-container2 .photo {
+    flex: 0.3;
+  }
+  
+  .download-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo {
+    flex: 0.2;
+  }
+  .skills-icon {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .column-container2 {
+    flex: 0.8;
+    display: flex;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+    padding: 20px 0 20px 0;
+  }
+  .downlaod-cv-btn {
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+  }
+  
+  .downlaod-cv-btn:hover {
+    background-color: #b579ed;
+  }
+  
+  .downlaod-cv-btn a:hover {
+    color: #1f1e1e;
+  }
+  .downlaod-cv-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  
+  /* experience section cs starts here*/
+  
+  .intro-container3 {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 0px;
+  }
+  .photo {
+    flex: 0.2;
+  }
+  
+  .column-container3 {
+    flex: 0.7;
+    display: flex;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+  }
+  
+  .intro-container4 {
+    display: flex;
+    width: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0 20px 0;
+  }
+  .photo {
+    flex: 0.2;
+  }
+  
+  .column-container4 {
+    flex: 0.8;
+    display: flex;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+  }
+  
+  .button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .button a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .skills {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .projects {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .edu {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .exp {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .hobby {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .contact {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  
+  .intro-container2 button {
+    flex: 0.3;
+    background-color: blueviolet;
+    border-radius: 8px;
+    font-size: 15px;
+  }
 }
