@@ -4,7 +4,6 @@ html {
   /* makes the scroll movement smooth */
 }
 
-
 /* to position arrow top as per the postition */
 /* #skills {
   border: 1px solid red;
@@ -13,106 +12,105 @@ html {
 
 /* media query */
 
-@media (min-width:320px)  {
- 
-    body {
-      background-color: #010303;
-    }
-    .navigation-bar{
-      display: none;
-    }
-    .mobile-nav{
-      display: flex;
-      color: white;
-      flex-direction: column;
-    }
-    .ham-menu{
-      width: 30px;
-    }
-    .header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+@media (min-width: 320px) {
+  body {
+    background-color: #010303;
   }
-    .logo h1 {
-      font-size: 25px;
-      color: blueviolet;
-    }
-    .photo img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .intro-container {
-      display: flex;
-      width: auto;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      padding: 20px 0 20px 0;
-    }
-    .intro-container2 {
-      display: flex;
-      width: auto;
-      flex-direction: column;
-      align-items: center;
-      justify-content: start;
-      gap: 40px;
-      padding: 20px 0 20px 0;
-      /* flex-direction: row-reverse; */
-    }
-    .intro-container2 .download-cv {
-      flex: 1;
-    }
-    .intro-container3 {
-      display: flex;
-      width: auto;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0px;
-    }
-    .column-container2 {
-      flex: 0.8;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      color: blueviolet;
-      line-height: 2rem;
-      padding: 20px 0 20px 0;
-      padding: 8px;
-    }
-    .skills {
-      font-size: 25px;
-    }
-    .projects {
-      font-size: 25px;
-      font-weight: 600;
-    }
-    .description {
-      font-size: 12px;
-    }
-  
-    .edu {
-      font-size: 25px;
-      font-weight: 600;
-    }
-    .text-white {
-      color: whitesmoke;
-      font-size: 12px;
-    }
-    .column-container3 {
-      flex: 0.7;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      color: blueviolet;
-    }
-    .exp {
-      font-size: 25px;
-      font-weight: 600;
+  .navigation-bar {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    color: white;
+    flex-direction: column;
+  }
+  .ham-menu {
+    width: 30px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo h1 {
+    font-size: 25px;
+    color: blueviolet;
+  }
+  .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .intro-container {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+  }
+  .intro-container2 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    padding: 20px 0 20px 0;
+    /* flex-direction: row-reverse; */
+  }
+  .intro-container2 .download-cv {
+    flex: 1;
+  }
+  .intro-container3 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .column-container2 {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: blueviolet;
+    line-height: 2rem;
+    padding: 20px 0 20px 0;
+    padding: 8px;
+  }
+  .skills {
+    font-size: 25px;
+  }
+  .projects {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .description {
+    font-size: 12px;
+  }
+
+  .edu {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .text-white {
+    color: whitesmoke;
+    font-size: 12px;
+  }
+  .column-container3 {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: blueviolet;
+  }
+  .exp {
+    font-size: 25px;
+    font-weight: 600;
   }
   .column-container4 {
     flex: 0.8;
@@ -122,37 +120,65 @@ html {
     color: blueviolet;
     line-height: 2rem;
   }
-  .mobile-ham-list{
-    margin-top: 24px;
-    margin-right: 5px;
-    background-color: blueviolet;
+  .mobile-ham-list {
+    margin-top: 12px;
+    margin-right: 6px;
+    background-color: #000000;
     display: flex;
-    color: white;
+    justify-content: space-between;
+    color: #b579ed;
     display: none;
     position: absolute;
     top: 0;
-
+    border: 1px solid #b579ed;
+   
+    width: 200px;
+    height: 510px;
     right: 0;
+    animation: fadeInAnimation ease 0.5s;;
   }
-  .mobile-ham-list a{
+  .mobile-ham-list a {
+    text-decoration: none;
+    color: #b579ed;
+  }
+  .mobile-ham-list ul {
+    list-style: none;
+    padding: 10px 20px ;
+    /* padding: 10px; */
+  }
+  .mobile-ham-list ul li {
+    padding-bottom: 20px;
+  }
+  .mobile-ham-list a:hover {
     text-decoration: none;
     color: white;
-    
-  }
-  .mobile-ham-list ul{
-    list-style: none;
-    padding: 8px;
-    background-color: blueviolet;
-  }
-  .close-btn img {
-    height: 20px;
+    color: #b579ed;
+}
 
+  .close-btn img {
+    height: 30px;
+    padding-top: 12px;
+    padding-right: 5px;
   }
- }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { 
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
   body {
     /* font style used here */
     /* font-family: "Open Sans", sans-serif; */
@@ -161,7 +187,7 @@ html {
     box-sizing: border-box;
     /* font-family: "Roboto Mono", monospace; */
   }
-  
+
   /* main container starts here */
   .container {
     height: auto;
@@ -179,7 +205,7 @@ html {
     flex-direction: row;
     align-items: center;
   }
-  .mobile-ham-list{
+  .mobile-ham-list {
     display: none;
   }
   /* logo 1stdiv inside header container */
@@ -187,7 +213,7 @@ html {
     /* given the portion 0.3 0r 30% of the cointainer header */
     flex: 0.3;
   }
-  .mobile-nav{
+  .mobile-nav {
     display: none;
     position: relative;
   }
@@ -221,11 +247,11 @@ html {
   .navigation-bar nav ul li a:hover {
     color: #b579ed;
   }
-  
+
   /* next container after header */
   .intro-container {
     display: flex;
-  
+
     width: auto;
     flex-direction: row;
     align-items: center;
@@ -249,7 +275,7 @@ html {
     /* font: italic 1.5em "Fira Sans", serif; */
     line-height: 2rem;
   }
-  
+
   .intro-container2 {
     display: flex;
     width: auto;
@@ -269,7 +295,7 @@ html {
   .intro-container2 .photo {
     flex: 0.3;
   }
-  
+
   .download-cv {
     display: flex;
     align-items: center;
@@ -284,7 +310,7 @@ html {
     align-items: center;
     justify-content: end;
   }
-  
+
   .column-container2 {
     flex: 0.8;
     display: flex;
@@ -298,11 +324,11 @@ html {
     padding: 14px;
     cursor: pointer;
   }
-  
+
   .downlaod-cv-btn:hover {
     background-color: #b579ed;
   }
-  
+
   .downlaod-cv-btn a:hover {
     color: #1f1e1e;
   }
@@ -311,9 +337,9 @@ html {
     color: white;
     font-size: 12px;
   }
-  
+
   /* experience section cs starts here*/
-  
+
   .intro-container3 {
     display: flex;
     width: auto;
@@ -325,7 +351,7 @@ html {
   .photo {
     flex: 0.2;
   }
-  
+
   .column-container3 {
     flex: 0.7;
     display: flex;
@@ -333,7 +359,7 @@ html {
     color: blueviolet;
     line-height: 2rem;
   }
-  
+
   .intro-container4 {
     display: flex;
     width: auto;
@@ -345,7 +371,7 @@ html {
   .photo {
     flex: 0.2;
   }
-  
+
   .column-container4 {
     flex: 0.8;
     display: flex;
@@ -353,7 +379,7 @@ html {
     color: blueviolet;
     line-height: 2rem;
   }
-  
+
   .button {
     width: 100%;
     display: flex;
@@ -368,7 +394,7 @@ html {
     display: inline-block;
     cursor: pointer;
   }
-  
+
   .skills {
     font-size: 38px;
     font-weight: 600;
@@ -393,15 +419,15 @@ html {
     font-size: 38px;
     font-weight: 600;
   }
-  
+
   .intro-container2 button {
     flex: 0.3;
     background-color: blueviolet;
     border-radius: 8px;
     font-size: 15px;
   }
- }
-@media (min-width:1281px) {
+}
+@media (min-width: 1281px) {
   body {
     /* font style used here */
     /* font-family: "Open Sans", sans-serif; */
@@ -410,7 +436,7 @@ html {
     box-sizing: border-box;
     /* font-family: "Roboto Mono", monospace; */
   }
-  
+
   /* main container starts here */
   .container {
     height: auto;
@@ -428,7 +454,7 @@ html {
     flex-direction: row;
     align-items: center;
   }
-  .mobile-ham-list{
+  .mobile-ham-list {
     display: none;
   }
   /* logo 1stdiv inside header container */
@@ -436,7 +462,7 @@ html {
     /* given the portion 0.3 0r 30% of the cointainer header */
     flex: 0.3;
   }
-  .mobile-nav{
+  .mobile-nav {
     display: none;
   }
   .logo h1 {
@@ -468,11 +494,11 @@ html {
   .navigation-bar nav ul li a:hover {
     color: #b579ed;
   }
-  
+
   /* next container after header */
   .intro-container {
     display: flex;
-  
+
     width: auto;
     flex-direction: row;
     align-items: center;
@@ -496,7 +522,7 @@ html {
     /* font: italic 1.5em "Fira Sans", serif; */
     line-height: 2rem;
   }
-  
+
   .intro-container2 {
     display: flex;
     width: auto;
@@ -516,7 +542,7 @@ html {
   .intro-container2 .photo {
     flex: 0.3;
   }
-  
+
   .download-cv {
     display: flex;
     align-items: center;
@@ -531,7 +557,7 @@ html {
     align-items: center;
     justify-content: end;
   }
-  
+
   .column-container2 {
     flex: 0.8;
     display: flex;
@@ -545,11 +571,11 @@ html {
     padding: 14px;
     cursor: pointer;
   }
-  
+
   .downlaod-cv-btn:hover {
     background-color: #b579ed;
   }
-  
+
   .downlaod-cv-btn a:hover {
     color: #1f1e1e;
   }
@@ -558,9 +584,9 @@ html {
     color: white;
     font-size: 12px;
   }
-  
+
   /* experience section cs starts here*/
-  
+
   .intro-container3 {
     display: flex;
     width: auto;
@@ -572,7 +598,7 @@ html {
   .photo {
     flex: 0.2;
   }
-  
+
   .column-container3 {
     flex: 0.7;
     display: flex;
@@ -580,7 +606,7 @@ html {
     color: blueviolet;
     line-height: 2rem;
   }
-  
+
   .intro-container4 {
     display: flex;
     width: auto;
@@ -592,7 +618,7 @@ html {
   .photo {
     flex: 0.2;
   }
-  
+
   .column-container4 {
     flex: 0.8;
     display: flex;
@@ -600,7 +626,7 @@ html {
     color: blueviolet;
     line-height: 2rem;
   }
-  
+
   .button {
     width: 100%;
     display: flex;
@@ -615,7 +641,7 @@ html {
     display: inline-block;
     cursor: pointer;
   }
-  
+
   .skills {
     font-size: 38px;
     font-weight: 600;
@@ -640,7 +666,7 @@ html {
     font-size: 38px;
     font-weight: 600;
   }
-  
+
   .intro-container2 button {
     flex: 0.3;
     background-color: blueviolet;
