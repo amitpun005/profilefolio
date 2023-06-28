@@ -133,6 +133,7 @@ html {
     position: absolute;
     top: 0;
     border: 1px solid #b579ed;
+    z-index: 9;
    
     width: 200px;
     height: 102vh;
