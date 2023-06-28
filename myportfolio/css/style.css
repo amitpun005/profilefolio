@@ -54,19 +54,46 @@ html {
   .intro-container2 {
     display: flex;
     width: auto;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: start;
     gap: 40px;
     padding: 20px 0 20px 0;
-    /* flex-direction: row-reverse; */
+    margin-top: 3rem;
+    
+    
+  }
+
+  /* .intro-container2 .downlaod-cv-btn{
+    background-color: #b579ed;
+    
+  } */
+
+
+
+  .intro-container2 button {
+    flex: 0.3;
+    background-color: blueviolet;
+    border-radius: 8px;
+    font-size: 15px;
+    border: none;
+    padding: 8px 0 8px 10px;
+
+  }
+
+  .intro-container2 button a{
+    text-decoration: none;
+    color: aliceblue;
   }
   .intro-container2 .download-cv {
     flex: 1;
+
+  
   }
   .intro-container3 {
     display: flex;
     width: auto;
+    margin-top: 4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -75,13 +102,14 @@ html {
   .column-container2 {
     flex: 0.8;
     display: flex;
-    flex-direction: column;
+    flex-direction: unset;
     gap: 30px;
     color: blueviolet;
     line-height: 2rem;
     padding: 20px 0 20px 0;
     padding: 8px;
     font-size: 25px;
+    margin-right: 4rem;
   }
   .skills {
     font-size: 25px;
@@ -89,6 +117,7 @@ html {
   .projects {
     font-size: 25px;
     font-weight: 600;
+    padding-left: 2.5rem;
   }
   .description {
     font-size: 12px;
