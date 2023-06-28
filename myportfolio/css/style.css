@@ -125,7 +125,7 @@ html {
   .mobile-ham-list{
     margin-top: 24px;
     margin-right: 5px;
-    background-color: #b579ed;
+    background-color: blueviolet;
     display: flex;
     color: white;
     display: none;
@@ -137,14 +137,17 @@ html {
   .mobile-ham-list a{
     text-decoration: none;
     color: white;
+    
   }
   .mobile-ham-list ul{
     list-style: none;
     padding: 8px;
-    background-color: #b579ed;
-    
+    background-color: blueviolet;
   }
-  
+  .close-btn img {
+    height: 20px;
+
+  }
  }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
