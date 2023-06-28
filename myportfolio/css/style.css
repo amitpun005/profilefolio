@@ -81,6 +81,7 @@ html {
     line-height: 2rem;
     padding: 20px 0 20px 0;
     padding: 8px;
+    font-size: 25px;
   }
   .skills {
     font-size: 25px;
@@ -119,6 +120,7 @@ html {
     gap: 30px;
     color: blueviolet;
     line-height: 2rem;
+    font-size: 25px;
   }
   .mobile-ham-list {
     margin-top: 12px;
@@ -133,7 +135,7 @@ html {
     border: 1px solid #b579ed;
    
     width: 200px;
-    height: 100vh;
+    height: 102vh;
     right: 0;
     animation: fadeInAnimation ease 0.5s;;
   }
@@ -316,6 +318,7 @@ html {
     display: flex;
     gap: 30px;
     color: blueviolet;
+    
     line-height: 2rem;
     padding: 20px 0 20px 0;
   }
@@ -366,6 +369,7 @@ html {
     flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
+    font-size: 25px;
     padding: 20px 0 20px 0;
   }
   .photo {
@@ -378,6 +382,7 @@ html {
     gap: 30px;
     color: blueviolet;
     line-height: 2rem;
+    
   }
 
   .button {
@@ -565,6 +570,7 @@ html {
     color: blueviolet;
     line-height: 2rem;
     padding: 20px 0 20px 0;
+    font-size: 25px;
   }
   .downlaod-cv-btn {
     border: none;
@@ -614,6 +620,7 @@ html {
     align-items: center;
     gap: 30px;
     padding: 20px 0 20px 0;
+    
   }
   .photo {
     flex: 0.2;
@@ -625,6 +632,7 @@ html {
     gap: 30px;
     color: blueviolet;
     line-height: 2rem;
+    font-size: 25px;
   }
 
   .button {
