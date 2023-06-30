@@ -133,6 +133,8 @@ html {
   .text-white {
     color: whitesmoke;
     font-size: 12px;
+    font-weight: 600;
+    line-height: 2rem;
   }
   .column-container3 {
     flex: 0.7;
