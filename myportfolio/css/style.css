@@ -157,7 +157,7 @@ html {
   }
 
    .button{
-    margin-left: 15rem;
+    margin-left: 23rem;
    } 
   
   .mobile-ham-list {
@@ -719,5 +719,14 @@ html {
     background-color: blueviolet;
     border-radius: 8px;
     font-size: 15px;
+  }
+
+  @media (min-width: 460px) {
+
+
+ .button .img a{
+margin-right: 16rem;
+    }
+    
   }
 }
