@@ -10,6 +10,7 @@ function callTopArrow(section) {
     let test = document.getElementById("myBtn");
     test.style.top = "35rem";
     test.style.right = "1.5rem";
+    closehambrger() //  calling the onclose menu
   } else if (section === "projects") {
     document.getElementById("skills").style.position = "";
     document.getElementById("hobby").style.position = "";
@@ -73,4 +74,7 @@ function openMobileMenu(){
 function closehambrger(){
   let targetMenu = document.getElementById('mobile-ham-list-id');
   targetMenu.style.display = "none"
+  
 }
+
+
